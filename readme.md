@@ -1,40 +1,25 @@
-Initialized by Azure Data Factory!
+Welcome to the DG2022-ADF wiki!
 
-# DGS2021_DEMO
+Here, We are going to to data movement and data trasformation using ADF, No code or low code technique. You can quickly build your pipeline using ADF by just Drag and drop components with setting few properties. You can build your workflow/Pipeline very quickly and very efficiently with ADF as its Serverless and Azure PaaS.
 
-This Demo is about applying Sentiment anylisis on cusotmer Feedbacks or Review data without any priore knowledge of Maths, Data Sciecne, Machine Learning or programming languages like Python, Java, Scala, C# etc. You can do it very quicly and very easily suing drag and drop component, using Azure Data Factory and Azure Congnitive Service for Language.
+Following Azure Resources You need to created this demo from your side.
 
-Here, In this Demo, It has used Text Analytics technique to provide Sentiment Label( Positive, Negative, Nutrul) on each customer Feedback.
+****Azure Resource group** 
 
-Demo has used following Azure Resources:
-              
-              Azure Resource group
-              Azure Data factory
-              Azure Blob Storage
-              Azure SQL Server
-              Azure Key Vault
-              Azure Cognitive Services
+****Azure Key Values**
 
-Here is solution Diagrams:
-![image](https://user-images.githubusercontent.com/64379307/150657611-665355e6-8f31-43a5-94dc-ae9b3f179d3e.png)
+****Azure Storage (blob)** 
 
-    Customer Feedback.csv - file has sample data.
-    .ppt file presentation.
+****Azure Storage with Highriache is true(Data Lake Gen 2)**
 
-You can easily integrate Azure Congnitive Service for Langurage - Text Analytics with other Azure Services and other services Such as :
+****Azure Sql Serverless Database**
+
+****Azure Data Factory**
 
 
-            Azure Logic Apps
-            Azure Synapse Analytics
-            Azure Data Factory
-            Azure Power Apps
-            PowerBI
+![image](https://user-images.githubusercontent.com/64379307/171499515-fe33b230-7f28-4ed1-8a04-26c60f9be850.png)
 
-**Use Cases:**
-Summarized big Docuemtns
-Deep understanding of customer Sentiment about your products or services
-Medical sector to prescribe baed on Doctor notes
-Reading Image Data e.g form recognizer (receip)
-Audio, Vidio data (for this another kind of cognitive services for Languages will use)
 
-Behind sentiment Analysis, Natural Language Proccessing - Technique works. 
+In ADF, you can parameterized your Linked Services, Pipeline, Dataset, Data flow so you can make it more dynamic and reusable. One Linked service/Pipeline/Dataset/Dataflow can work for anothere purpose for diffrent business outcomes or data.
+
+
