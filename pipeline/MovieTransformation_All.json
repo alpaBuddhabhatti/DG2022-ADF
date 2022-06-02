@@ -31,6 +31,16 @@
 									"type": "Expression"
 								}
 							},
+							"MoviesSink": {
+								"TableName": {
+									"value": "@replace(pipeline().parameters.FileName,'.csv','')",
+									"type": "Expression"
+								},
+								"SchemaName": {
+									"value": "dbo",
+									"type": "Expression"
+								}
+							},
 							"AllData": {
 								"Speccode": {
 									"value": "@pipeline().parameters.Speccode",
