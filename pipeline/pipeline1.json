@@ -49,34 +49,14 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DS_ABLB_IN",
-						"type": "DatasetReference",
-						"parameters": {
-							"FileName": {
-								"value": "moviesDB.csv",
-								"type": "Expression"
-							},
-							"speccode": {
-								"value": "movie",
-								"type": "Expression"
-							}
-						}
+						"referenceName": "DS_ABLB_SOURCE_FIRST",
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_ADLS_STAGING",
-						"type": "DatasetReference",
-						"parameters": {
-							"FileName": {
-								"value": "movie.csv",
-								"type": "Expression"
-							},
-							"Speccode": {
-								"value": "movie",
-								"type": "Expression"
-							}
-						}
+						"referenceName": "DS_ADL_lOADING_First",
+						"type": "DatasetReference"
 					}
 				]
 			}
