@@ -53,7 +53,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     wildcardPaths:[('*.csv')]) ~> source1",
-				"source1 filter(toInteger(year) >=1900 && toInteger(year) <=2000) ~> filter1",
+				"source1 filter(toInteger(year) >=1910 && toInteger(year) <=1915) ~> filter1",
 				"filter1 derive(Alladdress = regexReplace(regexReplace(Address,'[\\n]',','), '[\\r]',',')) ~> derivedColumn1",
 				"derivedColumn1 derive({address 1} = split(Alladdress, ',')[0],",
 				"          {address 2} = split(Alladdress, ',')[1],",
