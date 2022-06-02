@@ -33,6 +33,9 @@
 				},
 				{
 					"name": "derivedColumn2"
+				},
+				{
+					"name": "aggregate1"
 				}
 			],
 			"scriptLines": [
@@ -56,7 +59,9 @@
 				"          {address 2} = split(Alladdress, ',')[1],",
 				"          {address 3} = split(Alladdress, ',')[2],",
 				"          {address 4} = split(Alladdress, ',')[3]) ~> derivedColumn2",
-				"derivedColumn2 sink(allowSchemaDrift: true,",
+				"derivedColumn2 aggregate(groupBy(year),",
+				"     avgRAting = avg(toInteger(Rating))) ~> aggregate1",
+				"aggregate1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     partitionFileNames:[('avgrating.csv')],",
 				"     umask: 0022,",
