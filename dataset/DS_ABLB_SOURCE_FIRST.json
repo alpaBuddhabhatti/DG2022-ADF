@@ -5,6 +5,9 @@
 			"referenceName": "LS_ABLB_IN",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "FIRST"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
