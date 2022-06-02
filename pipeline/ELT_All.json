@@ -40,6 +40,10 @@
 					},
 					"waitOnCompletion": true,
 					"parameters": {
+						"FileName": {
+							"value": "@pipeline().parameters.FileName",
+							"type": "Expression"
+						},
 						"Speccode": {
 							"value": "@pipeline().parameters.speccode",
 							"type": "Expression"
